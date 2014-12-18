@@ -1,0 +1,16 @@
+{
+  "firebase": "casetext-goldibex",
+  "public": "build",
+  "ignore": [
+    "manifest",
+    "templates.js",
+    "rules.json",
+    "populate.json",
+    "*.map"
+  ],
+  "rewrites": [{
+    "source": "**!(.*)",
+    "destination": "/index.html"
+  }],
+  "rules": "build/rules.json"
+}

@@ -1,0 +1,11 @@
+doctype html
+html(ng-app="app", firebase="#{env.FIREBASE_URL}")
+  head
+    title Flashpoint: real-time apps without a line of code!
+    link(rel="stylesheet", href="/static/#{manifest('vendor.css')}")
+    link(rel="stylesheet", href="/static/#{manifest('app.css')}")
+  body
+    flashpoint-welcome Hello world!
+
+    script(src="/static/#{manifest('vendor.js')}")
+    script(src="/static/#{manifest('app.js')}")

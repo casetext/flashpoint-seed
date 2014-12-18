@@ -1,0 +1,9 @@
+{
+  "extends": "../.jshintrc",
+  "globals": {
+    "angular": false,
+    "io": false,
+    "Firebase": false,
+    "Fireproof": false
+  }
+}
