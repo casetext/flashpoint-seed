@@ -2,6 +2,7 @@
 'use strict';
 
 var gulp = require('gulp-help')(require('gulp')),
+  fs = require('fs'),
   bower = require('bower'),
   generateIndexPage = require('./gulp/lib/generateIndexPage');
 
@@ -15,6 +16,11 @@ require('./gulp/test');
 require('./gulp/rules');
 require('./gulp/populate');
 
+
+// create "build" if it doesn't exist
+try {
+  fs.mkdirSync('build');
+} catch(e) {}
 
 gulp.task('indexpage', false, ['app', 'vendor'], generateIndexPage);
 
