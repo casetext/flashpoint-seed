@@ -4,6 +4,7 @@
   "-W024": true,
   "globals": {
     "browser": false,
+    "users": false,
     "root": false,
     "inject": false,
     "module": false,
